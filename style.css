@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    font-size: 3em;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: right;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 350px;
+    width: 100%;
+}
+
+button {
+    font-size: 1.5em;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+#ce-button {
+    background-color: #f44336;
+}
+
+#ce-button:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+    #heading {
+        font-size: 2.5em;
+    }
+    button {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #heading {
+        font-size: 2em;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px;
+        height: 65px;
+    }
+}

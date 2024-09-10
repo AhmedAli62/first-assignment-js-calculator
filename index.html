@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <p id="heading">0</p>
+
+    <div id="buttons">
+        <button onclick="handleclick(1)">1</button>
+        <button onclick="handleclick(2)">2</button>
+        <button onclick="handleclick(3)">3</button>
+        <button onclick="handleclick(4)">4</button>
+        <button onclick="handleclick(5)">5</button>
+        <button onclick="handleclick(6)">6</button>
+        <button onclick="handleclick(7)">7</button>
+        <button onclick="handleclick(8)">8</button>
+        <button onclick="handleclick(9)">9</button>
+        <button onclick="handleclick(0)">0</button>
+        <button onclick="handleclick('+')">+</button>
+        <button onclick="handleclick('-')">-</button>
+        <button onclick="handleclick('*')">x</button>
+        <button onclick="handleclick('/')">/</button>
+        <button onclick="sum()">=</button>
+        <button id="ce-button" onclick="clearEntry()">CE</button>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
